@@ -216,7 +216,7 @@ export default function App() {
 
   // ФОНОВАЯ ОТПРАВКА ЗАПРОСА В ТЕЛЕГРАМ АПИ БЕЗ ЗАКРЫТИЯ ПРИЛОЖЕНИЯ
   const completeActiveCard = async (card: QuestCard) => {
-    const BOT_TOKEN = "8818196922:AAE82tjqjVU4CV0coydo_cjboDOwVOVCU-s";
+    const BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN";
     const partnerId = currentUser === "Sven" ? urlParams.get("t_id") : urlParams.get("s_id");
 
     if (partnerId && partnerId !== "None" && partnerId !== "null") {
